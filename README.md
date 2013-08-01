@@ -7,7 +7,8 @@ The purpose of this mini project is to explain the student how the asymmetric en
 
 The best way is to run the script without arguments and see help, then run it with the arguments provided in the help:
 
-1. run the script without arguments:
+run the script without arguments:
+
 	$ ./rsa.rb 
 	Bad Arguments!
 	usage:
@@ -24,7 +25,8 @@ The best way is to run the script without arguments and see help, then run it wi
 	to decrypt:
 	./rsa.rb -d "2303, 2497, 2120, 2120, 1983" 1019 3337
 
-2. Run the "encrypt" example to get the following output:
+Run the "encrypt" example to get the following output:
+
 	$ ./rsa.rb -e "Hello" 79 3337
 	2303, 2497, 2120, 2120, 1983
 
@@ -41,7 +43,8 @@ The best way is to run the script without arguments and see help, then run it wi
 	14 ^ 79 % 3337 = 1983
 	Getting the encrypted numbers: 2303, 2497, 2120, 2120, 1983
 
-3. Run the "decrypt example" to get the following output:
+Run the "decrypt example" to get the following output:
+
 	$ ./rsa.rb -d "2303, 2497, 2120, 2120, 1983" 1019 3337
 	Hello
 
@@ -57,7 +60,7 @@ The best way is to run the script without arguments and see help, then run it wi
 	Converting encrypted numbers into text:
 	"[47, 4, 11, 11, 14]" => Hello
 
-Please, note, even the explanation shows the usage of the exponent (^) modulus (%) operator, the actual implementation is more complex as we would quickly run out of numbers once performed on large numbers as 2303 ^ 1019
+Please, note, although, the explanation shows the usage of the exponent (^) modulus (%) operator, the actual implementation is more complex as we would quickly run out of numbers once performed on large numbers as 2303 ^ 1019
 Please, look into exponentModulus method to see how to progressively raise exponent and rotate the result with modulus along the way.
 
 Enjoy learning about cryptography!
